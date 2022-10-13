@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>SURVEY FORM</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- title -->
+        <h1>SURVEY FORM</h1>
+        
+        <form action="#">
+            
+        <!-- personal details -->
+        
+        <h2>Name <span>*</span></h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="text" name="First" id="name" required> <br>
+                <label for="First" class="name-label">First</label>            
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="Last" id="name" required> <br>
+                <label for="Last" class="name-label">Last</label> 
+            </div>
+            <div class="col-lg-12">
+                <h2>Email<span>*</span></h2>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </div>
+
+        
+        <!-- star rating -->
+        
+        <h3 class="exp" for="exp">Your Experience<span>*</span></h3>
+            <div class="rating">
+                <input type="radio" name="star" id="star1" value="one">
+                <label for="star1"></label>
+                <input type="radio" name="star" id="star2" value="two">
+                <label for="star2"></label>
+                <input type="radio" name="star" id="star3" value="three">
+                <label for="star3"></label>
+                <input type="radio" name="star" id="star4" value="four">
+                <label for="star4"></label>
+                <input type="radio" name="star" id="star5" value="five" required>
+                <label for="star5"></label>
+            </div>
+
+
+        <!-- feedback -->
+        
+        <p>Overall,how would you rate your experience with us?</p> 
+        
+        <h3>How satisfied are you with<span>*</span></h3>
+        
+        <!-- radio button table one -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th ></th>
+                    <th id="head">Very Unsatisfied</th>
+                    <th id="head">Unsatisfied</th>
+                    <th id="head">Neutral</th>
+                    <th id="head">Satisfied</th>
+                    <th id="head">Very Satisfied</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td id="head">Purchase</td>
+                    <td> 
+                        <input type="radio" name="radio" id="radio1" value="very unsatisfied"> 
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio2" value="unsatisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio3" value="neutral">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio4" value="satisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio5" value="very satisfied" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id="head">Service</td>
+                    <td> 
+                        <input type="radio" name="radio1" id="radio1" value="very unsatisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio1" id="radio2" value="unsatisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio1" id="radio3" value="neutral">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio1" id="radio4" value="satisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio1" id="radio5" value="very satisfied" required>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td id="head">Company Overall</td>
+                    <td> 
+                        <input type="radio" name="radio2" id="radio1" value="very unsatisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio2" id="radio2" value="unsatisfied">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio2" id="radio3" value="neutral">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio2" id="radio4" value="satisfied">
+                    </td>
+                    <td><input type="radio" name="radio2" id="radio5" value="very satisfied" required>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+        
+        
+        <h3>How likely are you to<span>*</span></h3>
+        
+        <!-- radio button table two -->
+        
+        <table class="table table-striped">
+            
+            <thead>
+                <tr>
+                    <th ></th>
+                    <th id="head">Very Unlikely</th>
+                    <th id="head">Unlikely</th>
+                    <th id="head">Neutral</th>
+                    <th id="head">Likely</th>
+                    <th id="head">Very Likely</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td id="head">Buy from us again</td>
+                    <td> 
+                        <input type="radio" name="radio3" id="radio1" >
+                    </td>
+                    <td>
+                        <input type="radio" name="radio3" id="radio2">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio3" id="radio3">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio3" id="radio4">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio3" id="radio5" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id="head">Recommend our product to others</td>
+                    <td> 
+                        <input type="radio" name="radio4" id="radio1" >
+                    </td>
+                    <td>
+                        <input type="radio" name="radio4" id="radio2">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio4" id="radio3">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio4" id="radio4">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio4" id="radio5" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id="head">Recommend our company to others</td>
+                    <td>
+                        <input type="radio" name="radio" id="radio1" >
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio2">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio3">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio4">
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="radio5" required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+        <!-- additional comments -->
+        
+        <h3>Additional comments or suggestions</h3>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea> <br>
+        
+        
+        <!-- submit button -->
+        
+        <input class="submit-btn" type="submit" value="SUBMIT" placeholder="SUBMIT">
+        
+        </form>
+        
+        
+        <!-- footer -->
+        <footer > ©️ Nishant Phule (2022)</footer>
+    </div>
+    
+    
+    <!-- jquery boostrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  
+</body>
+</html>
