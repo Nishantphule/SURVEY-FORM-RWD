@@ -1,42 +1,43 @@
-
-body{
+body {
     background-color: #AFB9F0;
 }
 
-h1{
+h1 {
     text-align: center;
     font-weight: bold;
     color: #A9DEF8;
     background-color: #9C93D9;
 }
 
-h3{
+h3 {
     margin: 40px 0 40px;
 }
 
-p{
+p {
     margin: 80px 0 0;
 }
 
-span{
+span {
     color: red;
 }
 
-input[type="text"],input[type="email"],textarea{
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     background-color: #A9DEF8;
 }
 
-td{
+td {
     text-align: center;
 }
 
-#head{
+#head {
     font-size: 16px;
     text-align: left;
 }
 
-.name-label{
+.name-label {
     font-weight: 400;
     font-size: 20px
 }
@@ -44,35 +45,35 @@ td{
 
 /* star rating */
 
-.exp{
+.exp {
     margin: 50px 0 0;
 }
 
-.rating{
-     position: absolute;
-     transform: rotateY(180deg);
-     
- } 
- 
- .rating input{
-     display: none;
- }
- 
- .rating label{
- display: inline-block;
- cursor: pointer;
- width: 30px ;
- }
- 
- .rating label:before{
-     content: '\f005';
-     font-family: fontAwesome;
-     position: relative;
-     display: block;
-     font-size: 25px;
- }
- 
- .rating label:after{
+.rating {
+    position: absolute;
+    transform: rotateY(180deg);
+
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 25px;
+}
+
+.rating label:after {
     content: '\f005';
     font-family: fontAwesome;
     position: absolute;
@@ -85,31 +86,31 @@ td{
 }
 
 .rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after{
+.rating label:hover~label:after,
+.rating input:checked~label:after {
     opacity: 2;
 }
 
 
 /* submit button */
 
-.submit-btn{
+.submit-btn {
     margin: 20px 0;
     padding: 10px;
     font-weight: bold;
     background-color: #93B0D9;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     background-color: #C8A9F8;
 }
- 
+
 
 /* footer */
- footer{
+footer {
     background-color: #9C93D9;
     color: black;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-  }
+}
